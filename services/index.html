@@ -9,10 +9,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../nav/index.css">
+    <!-- <link rel="stylesheet" href="../index.css"> -->
 </head>
 <body>
-    <nav>
+    <!-- <nav>
         <div class="protective_section nav">
             <div class="logo_container">
                 <img src="../assets/images/logo.png" />
@@ -28,10 +29,42 @@
                 <button class="btn_primary">Sign in</button>
             </div>
         </div>
-    </nav>
+    </nav> -->
+    <nav>
+        <ul class="menu">
+          <!-- <li class="logo"><a href="#">Creative Mind Agency</a></li> -->
+          <li class="logo_container"><a href="#">
+            <img src="../assets/images/logo.png" />
+      </a></li>
+      <div class="main_menu">
+          <li class="item"><a href="#">Home</a></li>
+          <li class="item has-submenu">
+            <a tabindex="0" class="menu_active"><span>Services</span><img src="../assets/shared/arrow_down.svg" /></a>
+            <ul class="submenu">
+              <li class="subitem"><a href="#">WhatsApp Business Services - Bulk SMS</a></li>
+              <li class="subitem"><a href="#">Digital Marketing</a></li>
+              <li class="subitem"><a href="#">Social Media Marekting</a></li>
+              <li class="subitem"><a href="#">Website Design & Development</a></li>
+              <li class="subitem"><a href="#">Video/Music Production</a></li>
+              <li class="subitem"><a href="#">Creative Design</a></li>
+            </ul>
+          </li>
+          <li class="item"><a href="#">About Us</a></li>
+          <li class="item"><a href="#">Why Us</a>
+            <li class="item"><a href="#">Contact Us</a>
+          </li>
+        </div>
+          <!-- <li class="item button"><a href="#">Log In</a></li>
+          <li class="item button secondary"><a href="#">Sign Up</a></li> -->
+          <li class="toggle"><a href="#">
+            <img class="menu_icon" src='../assets/shared/menu.svg' />
+          </a></li>
+        </ul>
+      </nav>
     <section class="services_hero">
         <div class="banner_section">
-            <img class="bannerImg" src="../assets/images/Banner/Banner.png" />
+            <img class="bannerImg " src="../assets/images/Banner/Banner.png" />
+            <img class="bannerImg mob" src="../assets/images/Banner/Banner_mob.png" />
             <div class="protective_section content_container">
                 <div class="content">
                     <h1>Our <span class="highlight">Services</span></h1>
@@ -202,5 +235,56 @@
         </div>
     </div>
 </footer>
+<script>
+    const toggle = document.querySelector(".toggle");
+    const menu = document.querySelector(".menu");
+    const items = document.querySelectorAll(".item");
+
+    /* Toggle mobile menu */
+    function toggleMenu() {
+    if (menu.classList.contains("active")) {
+        menu.classList.remove("active");
+        toggle.querySelector("a").innerHTML = "<img class=\"menu_icon\" src='../assets/shared/menu.svg' />";
+    } else {
+        menu.classList.add("active");
+        toggle.querySelector("a").innerHTML = "<img class=\"menu_icon\" src='../assets/shared/close.svg' />";
+    }
+    }
+
+    /* Activate Submenu */
+    function toggleItem() {
+    if (this.classList.contains("submenu-active")) {
+        this.classList.remove("submenu-active");
+    } else if (menu.querySelector(".submenu-active")) {
+        menu.querySelector(".submenu-active").classList.remove("submenu-active");
+        this.classList.add("submenu-active");
+    } else {
+        this.classList.add("submenu-active");
+    }
+    }
+
+    /* Close Submenu From Anywhere */
+    function closeSubmenu(e) {
+    if (menu.querySelector(".submenu-active")) {
+        let isClickInside = menu
+        .querySelector(".submenu-active")
+        .contains(e.target);
+
+        if (!isClickInside && menu.querySelector(".submenu-active")) {
+        menu.querySelector(".submenu-active").classList.remove("submenu-active");
+        }
+    }
+    }
+    /* Event Listeners */
+    toggle.addEventListener("click", toggleMenu, false);
+    for (let item of items) {
+    if (item.querySelector(".submenu")) {
+        item.addEventListener("click", toggleItem, false);
+    }
+    item.addEventListener("keypress", toggleItem, false);
+    }
+    document.addEventListener("click", closeSubmenu, false);
+
+  </script>
 </body>
 </html>

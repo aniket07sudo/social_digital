@@ -148,8 +148,9 @@ nav {
 }
 
 .service_card {
-    max-width: 381px;
+    max-width: 450px;
     grid-gap: 1rem;
+    width: 100%;
 
 }
 
@@ -397,7 +398,13 @@ footer {
         grid-row-gap: 2rem;
     }
 
-    
+    .content_container {
+        align-items: center;
+        height: 100%;
+        justify-content: space-evenly;
+    }
+
+   
 
     .content_container {
         flex-direction: column;
@@ -412,11 +419,11 @@ footer {
     }
 
     .bannerImg {
-        height: 40rem;
+        height: 37rem;
     }
 
     .banner_section {
-        padding: 3rem 5rem 18rem 5rem;
+        /* padding: 3rem 5rem 18rem 5rem; */
     }
 
     .company_services::after  , .company_services::before {
@@ -435,12 +442,58 @@ footer {
         flex-direction: column;
     }
 
+    .bannerImg {
+        height: 27rem;
+    }
+
+    
+
+
+    .bannerImg {
+        display: none;
+    }
+
+    .banner_section h1 {
+        font-size: 24px;
+    }
+
+    
+
+    .banner_section p {
+        font-size: 14px;
+    }
+
+
+    .content_container .illus {
+        max-width: 55%;
+    }
+
+    .content_container {
+        align-items: center;
+        height: 100%;
+        justify-content: space-evenly;
+    }
+
+    .content_container .content {
+        text-align: center;
+    }
+
+
     .navLinks {
         display: none;
     }
 
-    .bannerImg {
-        display: none;
+    .footer_content h2 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .footer_content {
+        gap: 1rem;
+    }
+
+    .footer_content p {
+        font-size: 14px;
     }
 
     .services_hero {
@@ -448,9 +501,7 @@ footer {
     }
 
     .banner_section {
-        background-color: #ffeccc;
-        padding: 2rem 3rem;
-        border-bottom: 16px solid #ff8135;
+        padding: 2rem 3rem 10rem 3rem;
     }
 
     .illus {
@@ -480,12 +531,38 @@ footer {
         padding: 1.4rem;
     }
 
+    .service_link {
+        font-size: 16px;
+    }
+
     .logo_container {
         max-width: 80px;
     }
 
+    .content_container .illus {
+        max-width: 80%;
+    }
+
+    .company_services .service_links {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 1.4rem;
+    }
+
+    .company_address h4 {
+        font-size: 16px;
+    }
+
     .main_footer {
-        padding: 1.4rem;
+        padding: 1rem;
+    }
+
+    .address {
+        gap: 1.4rem;
+    }
+
+    .btn_primary {
+        font-size: 16px;
     }
 
     .illustration {
