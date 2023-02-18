@@ -67,6 +67,11 @@
     text-decoration: none;
     color: #363636;
     font-weight: 600;
+    transition: all .3s ease;
+  }
+
+  .menu .main_menu li a:hover {
+    color: #F27428;
   }
 
   .menu .main_menu li a:focus {
@@ -80,6 +85,8 @@
   .menu .main_menu .item.has-submenu a {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 0.6rem;
   }
 
   .menu .main_menu .item.has-submenu a span {
