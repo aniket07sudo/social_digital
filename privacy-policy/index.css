@@ -383,6 +383,15 @@ footer {
     gap: 1rem;
 }
 
+.accordion_head_text {
+    text-align: center;
+    color: #363636;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
 .social_link_container h4 {
     margin-bottom: 1rem;
 }
@@ -441,6 +450,10 @@ footer {
         grid-row-gap: 2rem;
     }
 
+    .gradBack .background {
+        display: none;
+    }
+
     .content_container {
         align-items: center;
         height: 100%;
@@ -487,6 +500,10 @@ footer {
 
     .footer_content_container {
         flex-direction: column;
+    }
+
+    .accordion_head_text {
+        font-size: 16px;
     }
 
     .content_container .content {
@@ -591,13 +608,17 @@ footer {
         padding: 1.4rem;
     }
 
+    .accordion_head_text {
+        font-size: 14px;
+    }
+
     footer {
     background-size: contain;
 
     }
 
     .banner_section {
-        padding: 2rem 2rem 2rem 2rem;
+        padding: 2rem 2rem 4rem 2rem;
     }
 
     .service_card {
@@ -658,5 +679,11 @@ footer {
 
     .illustration img {
         width: 100%;
+    }
+}
+
+@media only screen and (max-width:390px) {
+    .accordions {
+        padding: 3rem 10px;
     }
 }
