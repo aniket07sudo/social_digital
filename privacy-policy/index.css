@@ -28,10 +28,12 @@ body {
 }
 
 .signIn {
-    padding: 3px;
+    padding: 0.2rem 3rem;
     border-radius: 30px;
     display: flex;
     align-items: center;
+  
+    
 }
 
 .bannerImg {
