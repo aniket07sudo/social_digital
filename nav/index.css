@@ -85,6 +85,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0.6rem 0;
+    position: relative;
   }
   .menu .main_menu li a {
     display: block;
@@ -236,10 +237,15 @@
     right: 0;
     left: 0;
     z-index: 10;
-    background-color: white;
     max-height: 0;
     transition: all .3s ease;
 }
+
+
+.navgradient {
+  display: none;
+}
+
 
 .menu.active .main_menu {
     padding: 1rem;
@@ -312,6 +318,7 @@
       background: royalblue;
       border-color: darkblue;
     }
+    
   }
   /* Desktop menu */
   @media all and (min-width: 1000px) {
@@ -320,10 +327,16 @@
       flex-wrap: nowrap;
       background: none;
       align-items: center;
+      padding: 0.6rem 2rem;
     }
 
    
-
+    .navgradient {
+      position: absolute;
+      right: 0;
+      bottom: -70px;
+      display: block;
+    }
     .btn_signIn {
       display: block;
     }
