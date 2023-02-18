@@ -171,7 +171,7 @@ body {
     align-items: center;
     justify-content: space-between;
     font-family: 'Poppins', sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
     transition: all .4s ease;
 
@@ -403,7 +403,7 @@ footer {
 
 .service_link {
     color: #363636;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 20px;
     text-decoration: none;
 
@@ -607,6 +607,7 @@ footer {
     .footer_content_container {
         padding: 1.4rem;
     }
+    
 
     .accordion_head_text {
         font-size: 14px;
@@ -631,7 +632,8 @@ footer {
 
     .accordion_container button {
         font-size: 16px;
-        padding: 1.6rem 1rem;
+        padding: 1rem 1rem;
+        text-align: left;
     }
 
     .accordion_container {
@@ -641,6 +643,7 @@ footer {
 
     .panel p {
         font-size: 14px;
+        padding: 0 1rem 1.6rem 1rem;
     }
 
     .logo_container {
