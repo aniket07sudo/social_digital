@@ -82,6 +82,11 @@
     color: #F27428!important;
   }
 
+  .has-submenu {
+    cursor: pointer;
+    user-select: none;
+  }
+
   .menu .main_menu .item.has-submenu a {
     display: flex;
     justify-content: space-between;
