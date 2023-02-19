@@ -240,6 +240,7 @@ footer {
 .company_services {
     position: relative;
     display: flex;
+    gap: 1rem;
 }
 
 .company_services::before {

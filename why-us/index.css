@@ -13,7 +13,7 @@ body {
     position: relative;
     z-index: 2;
 
-    padding: 3rem 10rem 20rem 10rem;
+    padding: 3rem 10rem 15rem 10rem;
 }
 
 .btn_primary {
@@ -28,10 +28,12 @@ body {
 }
 
 .signIn {
-    padding: 3px;
+    padding: 0.2rem 3rem;
     border-radius: 30px;
     display: flex;
     align-items: center;
+  
+    
 }
 
 .bannerImg {
@@ -40,6 +42,7 @@ body {
     left: 0;
     z-index: 1;
     width: 100%;
+    max-height: 40rem;
 }
 
 .effects {
@@ -171,7 +174,7 @@ body {
     align-items: center;
     justify-content: space-between;
     font-family: 'Poppins', sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
     transition: all .4s ease;
 
@@ -186,7 +189,6 @@ body {
 
 footer {
     position: relative;
-    margin-top: -6rem;
 }
 
 .footer_clip {
@@ -194,9 +196,8 @@ footer {
     clip-path: ellipse(64rem 14rem at 50% 49%);
     position: relative;
     z-index: 10;
+    margin-bottom: -6rem;
     /* transform: translateY(-20%); */
-    /* clip-path: ellipse(70% 121% at 41% -39%); */
-
 }
 
 
@@ -255,7 +256,7 @@ footer {
 .gradBack .background {
     position: absolute;
     right: 0;
-    bottom: 20rem;
+    bottom: 35rem;
     z-index: 1;
 }
 
@@ -265,7 +266,10 @@ footer {
     gap: 1rem;
 }
 
+footer {
+    /* clip-path: ellipse(130px 140px at 10% 20%); */
 
+}
 
 .insetClip {
     clip-path: ellipse(70% 121% at 41% -39%);
@@ -281,7 +285,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 0.6fr 1fr;
     grid-column-gap: 2rem;
-    padding: 7rem 5rem 0rem 5rem;
+    padding: 8rem 5rem 0rem 5rem;
 }
 
 .copyright {
@@ -339,6 +343,7 @@ footer {
     position: relative;
     display: flex;
     justify-content: space-between;
+    gap: 1rem;
 }
 
 .company_services::before {
@@ -404,7 +409,7 @@ footer {
 
 .service_link {
     color: #363636;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 20px;
     text-decoration: none;
 
@@ -447,12 +452,12 @@ footer {
 @media only screen and (max-width:1000px) {
     .main_footer {
         grid-template-columns: 1fr;
-        padding: 3rem;
+        padding: 7rem 3rem 1rem 3rem;
         grid-row-gap: 2rem;
     }
 
-    footer {
-        margin-top: -3rem;
+    .copyright {
+        padding: 0 1rem 1rem 1rem;
     }
 
     .gradBack .background {
@@ -516,7 +521,7 @@ footer {
     }
 
     .bannerImg {
-        height: 30rem;
+        height: 32rem;
     }
 
     
@@ -587,9 +592,10 @@ footer {
     }
 
     .footer_clip {
-        clip-path: none;
+        clip-path: ellipse(38rem 21rem at 48% 53%);
+        
         transform: none;
-        padding: 2rem 0;
+        padding: 3rem 0;
     }
 
     .services_section {
@@ -612,6 +618,13 @@ footer {
     .footer_content_container {
         padding: 1.4rem;
     }
+
+    .footer_clip {
+        clip-path: ellipse(30rem 20rem at 55% 51%);
+        transform: none;
+        padding: 3rem 0 6rem 0;
+    }
+    
 
     .accordion_head_text {
         font-size: 14px;
@@ -636,7 +649,8 @@ footer {
 
     .accordion_container button {
         font-size: 16px;
-        padding: 1.6rem 1rem;
+        padding: 1rem 1rem;
+        text-align: left;
     }
 
     .accordion_container {
@@ -646,6 +660,7 @@ footer {
 
     .panel p {
         font-size: 14px;
+        padding: 0 1rem 1.6rem 1rem;
     }
 
     .logo_container {
@@ -667,7 +682,7 @@ footer {
     }
 
     .main_footer {
-        padding: 1rem;
+        padding: 5rem 1rem 1rem 1rem;
     }
 
     .address {
@@ -676,6 +691,10 @@ footer {
 
     .btn_primary {
         font-size: 16px;
+    }
+
+    .main_footer::after {
+        margin-top: 0;
     }
 
     .illustration {
