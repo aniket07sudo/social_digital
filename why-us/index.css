@@ -193,10 +193,11 @@ footer {
 
 .footer_clip {
     background-color: #1b2750;
-    clip-path: ellipse(64rem 14rem at 50% 49%);
+    clip-path: ellipse(76rem 15rem at 45% 49%);
     position: relative;
     z-index: 10;
     margin-bottom: -6rem;
+    padding: 1rem 0;
     /* transform: translateY(-20%); */
 }
 
@@ -211,11 +212,14 @@ footer {
 }
 
 .back_lines {
+
     position: absolute;
-    top: 1.5rem;
+    top: -29px;
     left: 0;
     width: 100%;
+    height: 104%;
     z-index: -1;
+
 }
 
 .footer_content h2 {
@@ -432,6 +436,13 @@ footer {
 
     .back_lines {
         display: none;
+        /* position: absolute;
+        top: -20px;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+        height: 105%; */
+
     }
 
     .footer_content_container {
