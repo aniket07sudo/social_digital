@@ -79,7 +79,7 @@ body {
 }
 
 .services_section {
-    padding: 0 3rem;
+    padding: 0 3rem 2rem 3rem;
 }
 
 .banner_section h1 {
@@ -131,15 +131,18 @@ body {
 
 footer {
     position: relative;
-    margin-top: 10rem;
 }
 
 .footer_clip {
     background-color: #1b2750;
-    clip-path: ellipse(64rem 14rem at 50% 49%);
+    clip-path: ellipse(76rem 15rem at 45% 49%);
     position: relative;
-    transform: translateY(-20%);
+    z-index: 10;
+    margin-bottom: -6rem;
+    padding: 1rem 0;
 }
+
+
 
 
 .footer_content_container {
@@ -152,11 +155,14 @@ footer {
 }
 
 .back_lines {
+
     position: absolute;
-    top: 1.5rem;
+    top: -29px;
     left: 0;
     width: 100%;
+    height: 104%;
     z-index: -1;
+
 }
 
 .footer_content h2 {
@@ -197,11 +203,20 @@ footer {
 }
 
 .main_footer {
-    /* background-color: #ECEEFF; */
     display: grid;
     grid-template-columns: 1fr 0.6fr 1fr;
     grid-column-gap: 2rem;
-    padding: 0 5rem 3rem 5rem;
+    padding: 8rem 5rem 0rem 5rem;
+}
+
+.main_footer::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #c8c9d7ed;
+    margin-top: 2rem;
+    grid-column: 1 / -1;
 }
 
 .address {
@@ -310,6 +325,19 @@ footer {
     margin-bottom: 1rem;
 }
 
+.gradBack .background {
+    position: absolute;
+    right: 0;
+    bottom: 35rem;
+    z-index: 1;
+}
+
+.copyright {
+    padding: 2rem;
+    text-align: center;
+    font-size: 12px;
+}
+
 @media only screen and (max-width:1200px) {
    
     .banner_section h1 {
@@ -340,17 +368,21 @@ footer {
 @media only screen and (max-width:1000px) {
     .main_footer {
         grid-template-columns: 1fr;
-        padding: 3rem;
+        padding: 7rem 3rem 1rem 3rem;
         grid-row-gap: 2rem;
     }
-
+    .copyright {
+        padding: 0 1rem 1rem 1rem;
+    }
     .content_container {
         align-items: center;
         height: 100%;
         justify-content: space-evenly;
     }
 
-   
+    .gradBack .background {
+        display: none;
+    }
 
     .content_container {
         flex-direction: column;
@@ -458,14 +490,17 @@ footer {
         width: 100%;
     }
 
-    .footer_clip {
-        clip-path: none;
-        transform: none;
-        padding: 2rem 0;
-    }
+
 
     .services_section {
         padding: 0 1rem;
+    }
+
+    .footer_clip {
+        clip-path: ellipse(38rem 21rem at 48% 53%);
+        
+        transform: none;
+        padding: 3rem 0;
     }
 
     
@@ -475,6 +510,12 @@ footer {
  
     .footer_content_container {
         padding: 1.4rem;
+    }
+
+    .footer_clip {
+        clip-path: ellipse(30rem 20rem at 55% 51%);
+        transform: none;
+        padding: 3rem 0 6rem 0;
     }
 
     .service_card {
@@ -504,7 +545,11 @@ footer {
     }
 
     .main_footer {
-        padding: 1rem;
+        padding: 5rem 1rem 1rem 1rem;
+    }
+
+    .main_footer::after {
+        margin-top: 0;
     }
 
     .address {
