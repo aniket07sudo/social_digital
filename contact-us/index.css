@@ -468,13 +468,103 @@ footer {
     width: 100%;
 }
 
+.address_map_container {
+    display: flex;
+    align-items: center;
+}
+
+.address_section {
+    position: relative;
+}
+
+.address_icon_container {
+    background-color: white;
+    display: inline-block;
+    border-radius: 50%;
+    box-shadow: rgba(0 0 0/40%) 0 6px 10px;
+    padding: 10px;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.address_icon_container img {
+    width: 60px;
+    height: 60px;
+}
+
+.address_section {
+    padding: 7rem 0;
+}
+
+.address_details {
+    padding: 0 8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+}
+
+.address_details_inner {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    position: relative;
+    z-index: 10;
+}
+
+.address_detail {
+    display: flex;
+    gap: 2rem;
+}
+
+.address_map {
+    width: 55%;
+    padding: 2rem;
+}
+
+.address_iframe_container {
+    border: 10px solid #FF8135;
+    border-radius: 10px;
+}
+
+.address_path {
+    
+}
+
+.line_img {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.address_iframe_container iframe {
+    width: 100%;
+}
+
+.address_text_container h3 {
+    margin-bottom: 0.6rem;
+}
+
 @media only screen and (max-width:1200px) {
    
     .banner_section h1 {
         font-size: 30px;
         line-height: 34px
     }
-    
+
+    /* .address_details {
+        padding: 0 4rem;
+    } */
+    .address_map_container {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .address_map {
+        width: 100%;
+    }
 
     .back_lines {
         display: none;
@@ -513,7 +603,7 @@ footer {
     }
 
     .gradBack .background {
-        display: none;
+        /* display: none; */
     }
 
     .content_container {
@@ -548,9 +638,9 @@ footer {
         content: none;
     }
 
-    .effects {
+    /* .effects {
         display: none;
-    }
+    } */
 
     .banner_section h1 {
         margin-bottom: 1rem;
@@ -560,6 +650,14 @@ footer {
     .footer_clip {
         clip-path: ellipse(76vw 14rem at 50% 50%);
     }
+
+    .gradBack .background {
+        position: absolute;
+        right: 0;
+        bottom: 35rem;
+        z-index: 1;
+        top: -39rem;
+    }
 }
 
 @media only screen and (max-width:800px) {
@@ -567,6 +665,38 @@ footer {
 
     .footer_content_container {
         flex-direction: column;
+    }
+
+    .address_details {
+        padding: 0 2rem 0 4rem;
+    }
+
+    .address_details_inner {
+        gap: 2rem;
+    }
+
+    .address_icon_container {
+        width: 60px;
+        height: 60px;
+    }
+
+    .address_icon_container img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .address_section {
+        padding: 2rem 0;
+    }
+
+    .line_img {
+        position: absolute;
+        left: -90px;
+        top: -26vw;
+    }
+
+    .address_details {
+        gap: 6rem;
     }
 
     .illusContainer {
@@ -687,13 +817,59 @@ footer {
         font-size: 16px;
     }
 
-    
+    .gradBack .background {
+        position: absolute;
+        right: 0;
+        bottom: 35rem;
+        z-index: 1;
+        top: -48rem;
+    }
 }
 
 @media only screen and (max-width:450px) {
  
     .footer_content_container {
         padding: 1.4rem;
+    }
+
+    .gradBack .background {
+        position: absolute;
+        right: 0;
+        bottom: 35rem;
+        z-index: 1;
+        top: -48rem;
+    }
+    
+
+    .line_img {
+        position: absolute;
+        left: -94px;
+        top: -9vw;
+    }
+
+    .effects {
+        bottom: -400px;
+    }
+
+    .address_map {
+        padding: 1rem;
+    }
+
+    .address_iframe_container {
+        width: 100%;
+        height: 343px;
+    }
+
+    .address_iframe_container iframe {
+        height: 100%;
+    }
+
+    .address_text_container p {
+        word-break: break-all;
+    }
+
+    .address_section {
+        padding: 6rem 0;
     }
 
     .footer_clip {
@@ -747,6 +923,11 @@ footer {
 
     .content_container .illus {
         max-width: 80%;
+    }
+
+    .content_container > .effects {
+        display: block;
+        bottom: -100px;
     }
 
     .company_services .service_links {
