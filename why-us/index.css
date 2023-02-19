@@ -419,11 +419,28 @@ footer {
 
 }
 
+.illusContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 58%;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
 
+ 
+
+.illusContainer img {
+    width: 100%;
+}
 
 .company_address h4 {
     font-size: 20px;
     margin-bottom: 1rem;
+}
+
+.mobIllus {
+    display: none; 
 }
 
 @media only screen and (max-width:1200px) {
@@ -436,12 +453,6 @@ footer {
 
     .back_lines {
         display: none;
-        /* position: absolute;
-        top: -20px;
-        left: 0;
-        width: 100%;
-        z-index: -1;
-        height: 105%; */
 
     }
 
@@ -521,6 +532,19 @@ footer {
 
     .footer_content_container {
         flex-direction: column;
+    }
+
+    .illusContainer {
+        margin: unset;
+        width: 100%;
+    }
+
+    .mobIllus {
+        display: block; 
+    }
+
+    .webIllus {
+        display: none;
     }
 
     .accordion_head_text {
@@ -635,6 +659,7 @@ footer {
         transform: none;
         padding: 3rem 0 6rem 0;
     }
+
     
 
     .accordion_head_text {
