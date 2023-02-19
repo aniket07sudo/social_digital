@@ -537,6 +537,7 @@ footer {
     .illusContainer {
         margin: unset;
         width: 100%;
+        padding-right: 2rem;
     }
 
     .mobIllus {
