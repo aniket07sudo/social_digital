@@ -194,11 +194,13 @@ footer {
 
 .footer_clip {
     background-color: #1b2750;
-    clip-path: ellipse(81rem 15rem at 50% 50%);
+    clip-path: ellipse(84rem 18rem at 50% 50%);
     position: relative;
     z-index: 10;
     margin-bottom: -6rem;
-    padding: 6rem 0;
+    padding: 5rem 0;
+    overflow: hidden;
+    padding-bottom: 8rem;
     /* transform: translateY(-20%); */
 }
 
@@ -440,6 +442,7 @@ footer {
     width: 58%;
     margin: 0 auto;
     padding: 2rem 0;
+    padding-bottom: 4rem;
 }
 
  
@@ -476,6 +479,10 @@ footer {
     .back_lines {
         display: none;
 
+    }
+
+    .footer_clip {
+        clip-path: ellipse(47rem 15rem at 50% 50%);
     }
 
     .footer_content_container {
@@ -566,6 +573,7 @@ footer {
         margin: unset;
         width: 100%;
         padding-right: 2rem;
+        padding-top: 5rem;
     }
 
     .mobIllus {
@@ -659,7 +667,7 @@ footer {
         clip-path: ellipse(38rem 21rem at 48% 53%);
         
         transform: none;
-        padding: 3rem 0;
+        padding: 4rem 0;
     }
 
     .illustration {
@@ -672,6 +680,7 @@ footer {
 
     .accordion_container button {
         font-size: 20px;
+        text-align: left;
     }
 
     .panel p {
