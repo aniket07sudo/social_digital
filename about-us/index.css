@@ -13,7 +13,7 @@ body {
     position: relative;
     z-index: 2;
 
-    padding: 3rem 10rem 15rem 10rem;
+    padding: 3rem 10rem 10rem 10rem;
 }
 
 .btn_primary {
@@ -189,13 +189,29 @@ body {
 
 footer {
     position: relative;
+ 
 }
 
 .footer_clip {
     background-color: #1b2750;
-    clip-path: ellipse(64rem 14rem at 50% 49%);
+    clip-path: ellipse(76rem 15rem at 45% 49%);
     position: relative;
-    transform: translateY(-20%);
+    z-index: 10;
+    margin-bottom: -6rem;
+    padding: 1rem 0;
+}
+
+.subFooter_link {
+    color: #F27428;
+    font-size: 18px;
+    word-break: break-all;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
 }
 
 
@@ -209,11 +225,14 @@ footer {
 }
 
 .back_lines {
+
     position: absolute;
-    top: 1.5rem;
+    top: -29px;
     left: 0;
     width: 100%;
+    height: 104%;
     z-index: -1;
+
 }
 
 .footer_content h2 {
@@ -254,7 +273,7 @@ footer {
 .gradBack .background {
     position: absolute;
     right: 0;
-    bottom: 20rem;
+    bottom: 35rem;
     z-index: 1;
 }
 
@@ -283,7 +302,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 0.6fr 1fr;
     grid-column-gap: 2rem;
-    padding: 1rem 5rem 0rem 5rem;
+    padding: 8rem 5rem 0rem 5rem;
 }
 
 .copyright {
@@ -335,10 +354,6 @@ footer {
 .social_links {
     display: flex;
     gap: 1.2rem;
-}
-
-.link {
-    text-decoration: none;
 }
 
 .company_services {
@@ -417,11 +432,151 @@ footer {
 
 }
 
+.illusContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 58%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    padding-bottom: 4rem;
+}
 
+ 
+
+.illusContainer img {
+    width: 100%;
+}
 
 .company_address h4 {
     font-size: 20px;
     margin-bottom: 1rem;
+}
+
+.mobIllus {
+    display: none; 
+}
+
+/* .illustration {
+    max-width: 38rem;
+}
+
+.illustration img {
+    width: 100%;
+} */
+
+.address_map_container {
+    display: flex;
+    align-items: center;
+}
+
+.address_section {
+    position: relative;
+}
+
+.address_icon_container {
+    background-color: white;
+    display: inline-block;
+    border-radius: 50%;
+    box-shadow: rgba(0 0 0/40%) 0 6px 10px;
+    padding: 10px;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.address_icon_container img {
+    width: 60px;
+    height: 60px;
+}
+
+/* .address_section {
+    padding: 7rem 0;
+} */
+
+.address_details {
+    padding: 0 8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+}
+
+.address_details_inner {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    position: relative;
+    z-index: 10;
+}
+
+.address_detail {
+    display: flex;
+    gap: 2rem;
+}
+
+.address_map {
+    width: 55%;
+    padding: 2rem;
+}
+
+.address_iframe_container {
+    border: 10px solid #FF8135;
+    border-radius: 10px;
+}
+
+.address_path {
+    position: relative;
+    padding: 7rem 0;
+}
+
+
+
+.line_img {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.address_iframe_container iframe {
+    width: 100%;
+}
+
+.flex_content {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.flex_section {
+    text-align: center;
+    padding: 5rem 2rem 0 2rem;
+}
+
+.flex_section h2 {
+    font-size: 40px;
+    margin-bottom: 2rem;
+} 
+
+.flex_section .highlight {
+    color: #F27428;
+}
+
+.address_text_container h3 {
+    margin-bottom: 0.6rem;
+}
+
+.flex_illus {
+    width: 85%;
+}
+
+.flex_text p {
+    text-align: left;
+}
+
+.flex_illus img {
+    width: 100%;
 }
 
 @media only screen and (max-width:1200px) {
@@ -430,10 +585,22 @@ footer {
         font-size: 30px;
         line-height: 34px
     }
-    
+
+    /* .address_details {
+        padding: 0 4rem;
+    } */
+    .address_map_container {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .address_map {
+        width: 100%;
+    }
 
     .back_lines {
         display: none;
+
     }
 
     .footer_content_container {
@@ -454,8 +621,17 @@ footer {
 @media only screen and (max-width:1000px) {
     .main_footer {
         grid-template-columns: 1fr;
-        padding: 3rem 3rem 1rem 3rem;
+        padding: 7rem 3rem 1rem 3rem;
         grid-row-gap: 2rem;
+    }
+
+    .flex_section h2 {
+        margin-bottom: 2rem;
+    }
+
+    .flex_content {
+        flex-direction: column;
+        gap: 50px;
     }
 
     .copyright {
@@ -463,7 +639,7 @@ footer {
     }
 
     .gradBack .background {
-        display: none;
+        /* display: none; */
     }
 
     .content_container {
@@ -498,12 +674,22 @@ footer {
         content: none;
     }
 
-    .effects {
+    /* .effects {
         display: none;
-    }
+    } */
 
     .banner_section h1 {
         margin-bottom: 1rem;
+    }
+
+ 
+
+    .gradBack .background {
+        position: absolute;
+        right: 0;
+        bottom: 35rem;
+        z-index: 1;
+        top: -39rem;
     }
 }
 
@@ -512,6 +698,56 @@ footer {
 
     .footer_content_container {
         flex-direction: column;
+    }
+
+    .address_details {
+        padding: 0 2rem 0 2rem;
+    }
+
+    .address_details_inner {
+        gap: 2rem;
+    }
+
+    .address_icon_container {
+        width: 60px;
+        height: 60px;
+    }
+
+    .address_icon_container img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .address_section {
+        padding: 2rem 0;
+    }
+
+    .line_img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        width: 20%;
+    }
+
+    .address_details {
+        gap: 6rem;
+    }
+
+    .illusContainer {
+        margin: unset;
+        width: 100%;
+        padding-right: 2rem;
+        padding-top: 5rem;
+    }
+
+    .mobIllus {
+        display: block; 
+    }
+
+    .webIllus {
+        display: none;
     }
 
     .accordion_head_text {
@@ -523,7 +759,7 @@ footer {
     }
 
     .bannerImg {
-        height: 30rem;
+        height: 32rem;
     }
 
     
@@ -594,10 +830,15 @@ footer {
     }
 
     .footer_clip {
-        clip-path: none;
+        clip-path: ellipse(38rem 21rem at 48% 53%);
+        
         transform: none;
-        padding: 2rem 0;
+        padding: 3rem 0;
     }
+
+    /* .illustration {
+        max-width: 15rem;
+    } */
 
     .services_section {
         padding: 0 1rem;
@@ -605,13 +846,24 @@ footer {
 
     .accordion_container button {
         font-size: 20px;
+        text-align: left;
     }
 
     .panel p {
         font-size: 16px;
     }
 
-    
+    .gradBack .background {
+        position: absolute;
+        right: 0;
+        bottom: 35rem;
+        z-index: 1;
+        top: -48rem;
+    }
+
+    .flex_section h2 {
+        font-size: 30px;
+    }
 }
 
 @media only screen and (max-width:450px) {
@@ -619,6 +871,78 @@ footer {
     .footer_content_container {
         padding: 1.4rem;
     }
+
+    .flex_text p {
+        font-size: 14px;
+    }
+
+    .effects {
+        width: 100%;
+    }
+
+    .flex_section {
+        padding: 3rem 2rem 2rem 2rem;
+    }
+
+    .flex_section h2 {
+        font-size: 24px;
+    }
+
+    .address_path {
+        padding: 5rem 0 0 0;
+    }
+
+    .gradBack .background {
+        position: absolute;
+        right: 0;
+        bottom: 35rem;
+        z-index: 1;
+        top: -48rem;
+    }
+
+    .address_details {
+        gap: 3rem;
+    }
+    
+
+    /* .line_img {
+        position: absolute;
+        left: -94px;
+        top: -9vw;
+    } */
+
+    .effects {
+        bottom: -400px;
+    }
+
+    .address_map {
+        padding: 1rem;
+    }
+
+    .address_iframe_container {
+        width: 100%;
+        height: 343px;
+    }
+
+    .address_iframe_container iframe {
+        height: 100%;
+    }
+
+    .address_text_container p {
+        word-break: break-all;
+        font-size: 14px;
+    }
+
+    .address_section {
+        padding: 3rem 0;
+    }
+
+    .footer_clip {
+        clip-path: ellipse(30rem 20rem at 55% 51%);
+        transform: none;
+        padding: 3rem 0 6rem 0;
+    }
+
     
 
     .accordion_head_text {
@@ -666,6 +990,11 @@ footer {
         max-width: 80%;
     }
 
+    .content_container > .effects {
+        display: block;
+        bottom: -100px;
+    }
+
     .company_services .service_links {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -677,7 +1006,7 @@ footer {
     }
 
     .main_footer {
-        padding: 1rem;
+        padding: 7rem 1rem 1rem 1rem;
     }
 
     .address {
@@ -686,6 +1015,10 @@ footer {
 
     .btn_primary {
         font-size: 16px;
+    }
+
+    .main_footer::after {
+        margin-top: 0;
     }
 
     .illustration {
