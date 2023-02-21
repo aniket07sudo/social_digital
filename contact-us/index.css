@@ -13,7 +13,7 @@ body {
     position: relative;
     z-index: 2;
 
-    padding: 3rem 10rem 15rem 10rem;
+    padding: 3rem 10rem 10rem 10rem;
 }
 
 .btn_primary {
@@ -194,14 +194,11 @@ footer {
 
 .footer_clip {
     background-color: #1b2750;
-    clip-path: ellipse(84rem 18rem at 50% 50%);
+    clip-path: ellipse(76rem 15rem at 45% 49%);
     position: relative;
     z-index: 10;
     margin-bottom: -6rem;
-    padding: 5rem 0;
-    overflow: hidden;
-    padding-bottom: 8rem;
-    /* transform: translateY(-20%); */
+    padding: 1rem 0;
 }
 
 .subFooter_link {
@@ -460,13 +457,13 @@ footer {
     display: none; 
 }
 
-.illustration {
+/* .illustration {
     max-width: 38rem;
 }
 
 .illustration img {
     width: 100%;
-}
+} */
 
 .address_map_container {
     display: flex;
@@ -495,15 +492,15 @@ footer {
     height: 60px;
 }
 
-.address_section {
+/* .address_section {
     padding: 7rem 0;
-}
+} */
 
 .address_details {
     padding: 0 8rem;
     display: flex;
     flex-direction: column;
-    gap: 8rem;
+    gap: 6rem;
 }
 
 .address_details_inner {
@@ -530,8 +527,11 @@ footer {
 }
 
 .address_path {
-    
+    position: relative;
+    padding: 7rem 0;
 }
+
+
 
 .line_img {
     position: absolute;
@@ -569,10 +569,6 @@ footer {
     .back_lines {
         display: none;
 
-    }
-
-    .footer_clip {
-        clip-path: ellipse(47rem 15rem at 50% 50%);
     }
 
     .footer_content_container {
@@ -646,10 +642,7 @@ footer {
         margin-bottom: 1rem;
     }
 
-    
-    .footer_clip {
-        clip-path: ellipse(76vw 14rem at 50% 50%);
-    }
+ 
 
     .gradBack .background {
         position: absolute;
@@ -668,7 +661,7 @@ footer {
     }
 
     .address_details {
-        padding: 0 2rem 0 4rem;
+        padding: 0 2rem 0 2rem;
     }
 
     .address_details_inner {
@@ -691,8 +684,11 @@ footer {
 
     .line_img {
         position: absolute;
-        left: -90px;
-        top: -26vw;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        width: 20%;
     }
 
     .address_details {
@@ -797,12 +793,12 @@ footer {
         clip-path: ellipse(38rem 21rem at 48% 53%);
         
         transform: none;
-        padding: 4rem 0;
+        padding: 3rem 0;
     }
 
-    .illustration {
+    /* .illustration {
         max-width: 15rem;
-    }
+    } */
 
     .services_section {
         padding: 0 1rem;
@@ -832,6 +828,12 @@ footer {
         padding: 1.4rem;
     }
 
+    
+
+    .address_path {
+        padding: 5rem 0 0 0;
+    }
+
     .gradBack .background {
         position: absolute;
         right: 0;
@@ -839,13 +841,17 @@ footer {
         z-index: 1;
         top: -48rem;
     }
+
+    .address_details {
+        gap: 3rem;
+    }
     
 
-    .line_img {
+    /* .line_img {
         position: absolute;
         left: -94px;
         top: -9vw;
-    }
+    } */
 
     .effects {
         bottom: -400px;
@@ -866,10 +872,11 @@ footer {
 
     .address_text_container p {
         word-break: break-all;
+        font-size: 14px;
     }
 
     .address_section {
-        padding: 6rem 0;
+        padding: 3rem 0;
     }
 
     .footer_clip {
