@@ -264,6 +264,14 @@ footer {
     font-weight: 500;
     background: linear-gradient(to right,#F28705,#F35B58 100%);
     cursor: pointer;
+    border: 2px solid #F28705;
+    transition: all .3s ease;
+}
+
+.footer_content button:hover {
+    border: 2px solid #F28705;
+    background: transparent;
+    color: white;
 }
 
 .gradBack {

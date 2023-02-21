@@ -37,6 +37,12 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     cursor: pointer;
+    transition: all .3s ease;
+  }
+
+  .btn_signIn:hover {
+    background-color: #F28705;
+    color: white;
   }
 
   .btn_signIn {
