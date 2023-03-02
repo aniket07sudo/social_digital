@@ -227,14 +227,14 @@ footer {
 .back_lines {
 
     position: absolute;
-    top: -29px;
+    top: 0;
     left: 0;
+    bottom: 0;
+    height: 100%;
     width: 100%;
-    height: 104%;
+    object-fit: cover;
     z-index: -1;
-
 }
-
 .footer_content h2 {
     color: white;
     font-size: 2.5rem;
@@ -587,11 +587,283 @@ footer {
     width: 100%;
 }
 
+.curve_container {
+    background-image:url('../assets/images/about/background.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 67vw;
+    position: relative;
+}
+
+.curve_inner {
+    max-width: 1440px;
+    margin: auto;
+    padding: 14rem 3rem;
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+}
+
+.curve_content {
+    display: flex;
+    flex-direction: column;
+}
+
+.curve_content > p {
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.curve_image_text {
+    text-align: center;
+}
+
+.curve_image_text p:nth-child(1) {
+    font-weight: 500;
+    color: white;
+    font-size: 32px;
+}
+
+.curve_image_text p:nth-child(2) {
+    color: white;
+    font-size: 20px;
+}
+
+.curve_image_text p:nth-child(1) {
+    margin-bottom: 10px;
+}
+
+.curve_image_text .highlight {
+    color: #F27428;
+}
+
+.curve_represent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.curve_represent img {
+    width: 100%;
+}
+
+.curve_inner h1 {
+    font-size: 40px;
+    margin: 1rem 0;
+}
+
+.curve_inner .highlight {
+    color: #F27428;
+    text-transform: capitalize;
+}
+
+.curve_inner h1 {
+    color: white;
+}
+
+.icons {
+    display: flex;
+    gap: 3rem;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon p:nth-child(3) {
+    color: white;
+}
+
+.different {
+    text-align: center;
+    /* max-width: 1440px; */
+    /* margin: 0 auto; */
+    position: relative;
+    padding: 4rem 0 12rem 0;
+}
+
+.road_map_container {
+    max-width: 260px;
+    display: inline-block;
+    position: relative;
+    margin: 0 2rem;
+}
+
+.r1 {
+    /* margin-top: 17vw; */
+    top: 12vw;
+}
+
+.r2 {
+    top: 8vw;
+}
+
+.r3 {
+    top: 10vw;
+}
+
+
+.r4 {
+    top: 4vw;
+}
+
+.road_map_container h3 {
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.road_maps {
+    display: flex;
+}
+
+.road_map_container p {
+    text-align: left;
+}
+
+
+
+.icon_container img {
+    width: 80%;
+}
+
+.road_map_container .icon_container {
+    box-shadow: 0px 40px 16px rgba(64, 48, 32, 0.01), 0px 22px 13px rgba(64, 48, 32, 0.05), 0px 10px 10px rgba(64, 48, 32, 0.09);
+}
+
+.head_text {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.road_map {
+    position: relative;
+    background-image: url('../assets/images/about/road_lines.png');
+    background-repeat: no-repeat;
+    padding: 5rem 0;
+    background-size: contain;
+}
+
+.road_lines {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.head_text .highlight {
+    color: #F27428;
+}
+
+.icon p:nth-child(2) {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.icon_container {
+    background-color: white;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.3rem;
+}
+
+.back_lines {
+    display: none;
+}
+
+.icon .icon_text_container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.back_lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@media only screen and (max-width:1708px) {
+    
+    .r1 {
+        top: 10vw;
+    }
+
+    .r2 {
+        top: 6vw;
+    }
+
+    .r3 {
+        top: 10vw;
+    }
+    .r4 {
+        top: 3vw;
+    }
+}
+
+@media only screen and (max-width:1400px) {
+    
+    .r1 {
+        top: 7vw;
+    }
+
+    .r2 {
+        top: 6vw;
+    }
+
+    .icons {
+        justify-content: center;
+    }
+
+    .r3 {
+        top: 8vw;
+    }
+    .r4 {
+        top: 2vw;
+    }
+    .road_map_container {
+        margin: 0;
+    }
+}
+
+
 @media only screen and (max-width:1200px) {
    
     .banner_section h1 {
         font-size: 30px;
         line-height: 34px
+    }
+
+    .different {
+        padding: 4rem 0 8rem 0;
+    }
+
+    .curve_container {
+        background-image: none;
+        background-color: #1B2750;
+        height: auto;
+    }
+
+    .curve_inner {
+        padding: 4rem 3rem;
+        flex-direction: column;
+    }
+  
+    .road_map {
+        padding: 2rem 0;
     }
 
     /* .address_details {
@@ -605,11 +877,11 @@ footer {
     .address_map {
         width: 100%;
     }
-
+/* 
     .back_lines {
         display: none;
 
-    }
+    } */
 
     .footer_content_container {
         padding: 3rem;
@@ -623,14 +895,78 @@ footer {
         height: 35rem;
     }
 
+    .curve_container {
+        clip-path:ellipse(73rem 50% at 49% 50%);
+    }
+
+    .back_lines {
+        display: block;
+    }
 
 }
+
+@media only screen and (max-width:1090px) {
+    .road_map {
+        background-image: url('../assets/images/about/roadlines_mob.png');
+    }
+
+    .different {
+        padding: 4rem 0 4rem 0;
+    }
+
+    .icon_container {
+        min-width: 90px;
+     
+    }
+
+    .road_map_container {
+        max-width: unset;
+    }
+
+    .road_map_wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 5rem 2rem 0 1rem;
+    }
+
+    .r1 {
+        top: unset;
+    }
+
+    .r2 {
+        top: unset;
+    }
+
+    .r3 {
+        top: unset;
+    }
+
+    .r4 {
+        top: unset;
+    }
+
+    .road_map_container {
+        display: flex;
+        gap: 1rem;
+    }
+}
+
+
 
 @media only screen and (max-width:1000px) {
     .main_footer {
         grid-template-columns: 1fr;
         padding: 7rem 3rem 1rem 3rem;
         grid-row-gap: 2rem;
+    }
+
+    .flex_illus img {
+        max-width: 70%;
+    }
+
+    .curve_inner h1 {
+        font-size: 30px;
     }
 
     .flex_section h2 {
@@ -699,6 +1035,10 @@ footer {
         z-index: 1;
         top: -39rem;
     }
+
+    .curve_content {
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width:800px) {
@@ -706,6 +1046,19 @@ footer {
 
     .footer_content_container {
         flex-direction: column;
+    }
+
+    .different {
+        padding: 4rem 0 2rem 0;
+    }
+
+    .flex_illus img {
+        max-width: 80%;
+    }
+
+    .icons {
+        flex-direction: column;
+        gap: 2rem;
     }
 
     .address_details {
@@ -872,9 +1225,88 @@ footer {
     .flex_section h2 {
         font-size: 30px;
     }
+
+    .curve_inner {
+        gap: 4rem;
+    } 
+
+    .curve_container {
+        clip-path: ellipse(54rem 47% at 48% 50%);
+    }
+
+    .head_text {
+        font-size: 30px;
+    }
+
+    .different p {
+        font-size: 16px;
+    }
+
+    .different > p {
+        padding: 0 1rem;
+
+    }
 }
 
 @media only screen and (max-width:450px) {
+
+    .curve_inner {
+        padding: 4rem 1rem;
+    }
+
+    .road_map {
+        margin-top: -4rem;
+    }
+
+    .road_map_wrapper {
+        padding: 5rem 2rem 0 0.3rem;
+    }
+
+    .different {
+        padding: 2rem 0 0rem 0;
+    }
+
+    .icon_container {
+        min-width: 70px;
+        height: 70px;
+        width: unset;
+    }
+
+    .icons {
+        gap: 1rem;
+    }
+
+    .head_text {
+        font-size: 24px;
+    }
+
+    .different p {
+        font-size: 14px;
+    }
+
+    .curve_container {
+        clip-path: circle(66% at 50% 50%);
+    }
+
+    .flex_illus img {
+        max-width: 95%;
+    }
+
+    .curve_image_text p:nth-child(1) {
+        font-size: 24px;
+    }
+
+    .curve_image_text p:nth-child(2) {
+        font-size: 16px;
+    }
+
+    .curve_inner h1 {
+        font-size: 24px;
+    }
+
+    .curve_content > p {
+        font-size: 14px;
+    }
  
     .footer_content_container {
         padding: 1.4rem;
@@ -884,8 +1316,23 @@ footer {
         font-size: 14px;
     }
 
+    .icon {
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 1.5rem;
+    }
+
+    .icon .icon_text_container {
+        gap: 0.8rem;
+        align-items: flex-start;
+    }
+
     .effects {
         width: 100%;
+    }
+
+    .curve_inner {
+        gap: 2rem;
     }
 
     .flex_section {
