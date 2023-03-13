@@ -340,11 +340,244 @@ footer {
     font-size: 12px;
 }
 
+.text_header {
+    padding: 3rem 7rem;
+}
+
+.text_header p {
+    font-size: 20px;
+    font-weight: 500;
+    color: #363636;
+    line-height: 34px;
+}
+
+.text_header .highlight {
+    font-size: 48px;
+    color: #F27428;
+}
+
+.features {
+    padding: 2rem 8.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+main {
+    background-image: url('../shared/leftLine.png');
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: contain;
+    padding-bottom: 10rem;
+}
+
+.feature {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    grid-column-gap: 25px;
+}
+
+.feature_content h3 {
+    font-weight: 600;
+    font-size: 18px;
+    color: #363636;
+    margin-bottom: 10px;
+}
+
+.feature_icon {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    box-shadow: 0px 40px 16px rgba(64, 48, 32, 0.01), 0px 22px 13px rgba(64, 48, 32, 0.05), 0px 10px 10px rgba(64, 48, 32, 0.09);
+}
+
+.back_illus {
+    background-image: url('../shared/back.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1068px;
+    position: relative;
+}
+
+.back_illus_container h3 {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.back_illus_container p {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.back_illus_steps {
+    /* padding: 0 4rem; */
+}
+
+.back_illus_container .highlight {
+    color: #F27428;
+}
+
+.back_illus_container {
+    padding: 14rem 6rem;
+    text-align: center;
+}
+
+ol {
+    list-style: none;
+    counter-reset: my-awesome-counter;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+ol li {
+    counter-increment: my-awesome-counter;
+    display: flex;
+    gap: 35px;
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: white;
+    text-align: left;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+}
+ol li::before {
+    content:counter(my-awesome-counter) ".";
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 1;
+    color: white;
+    line-height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.page_sub_text {
+    padding: 7rem 6rem;
+    text-align: center;
+    position: relative;
+}
+
+.page_sub_text .highlight {
+    color: #F27428;
+}
+
+.page_sub_text h3 {
+    font-size: 40px;
+    color: #363636;
+    margin-bottom: 15px;
+
+}
+
+.page_sub_para  {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.page_sub_para p {
+    text-align: left;
+}
+
+.page_sub_para p .bold {
+    font-weight: 600;
+}
+
+.page_sub_steps {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.page_sub_step {
+    display: grid;
+    grid-template-columns: 35px 1fr;
+    grid-column-gap: 30px;
+    align-items: center;
+
+}
+
+.top_gradient {
+    position: absolute;
+    top: -50%;
+    right: 0;
+}
+
+.page_sub_image {
+    display: flex;
+    align-items: center;
+
+}
+
+.page_sub_image img {
+    width: 100%;
+}
+
+.page_sub_text > p {
+    font-size: 18px;
+    margin-bottom: 55px;
+}
+
+.sub_bottom {
+    position: absolute;
+    bottom: -32%;
+    z-index: -1;
+}
+
+.sub_top {
+    position: absolute;
+    top: -22%;
+    right: 0;
+    z-index: -1;
+}
+
+.nav_gradient {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+nav {
+    position: relative;
+}
+
+
+@media only screen and (max-width:1500px) {
+    .features {
+        padding: 5rem 11rem 5rem 15vw;
+    }
+
+    main {
+        background-size: 20% 90%;
+    }
+}
+  
+
 @media only screen and (max-width:1200px) {
    
     .banner_section h1 {
         font-size: 30px;
         line-height: 34px
+    }
+
+    .page_sub_text {
+        padding: 7rem 4rem;
+    }
+
+    .back_illus {
+        background-size: 100% 100%;
+        height: auto;
+    }
+
+    .features {
+        padding: 5rem 5rem 5rem 13.5vw;
     }
     
 
@@ -426,8 +659,20 @@ footer {
         height: 27rem;
     }
 
-    
+    .text_header {
+        padding: 3rem 2rem;
+        font-size: 16px;
+    }
 
+    
+    main {
+        background-image: url('../shared/timeline_mob.png');
+        background-size: 19% 94%;
+    }
+
+    .features {
+        padding: 8rem 5rem 5rem 4.5vw;
+    }
 
     .bannerImg {
         display: none;
@@ -505,13 +750,126 @@ footer {
         padding: 3rem 0;
     }
 
-    
+    .back_illus {
+        background-image: url('../shared/mob_sub_back.png');
+    }
+
+    .back_illus_container {
+        padding: 7rem 3rem;
+    }
+
+    .back_illus_container h3 {
+        font-size: 30px;
+    }
+
+    .feature {
+        grid-template-columns: 70px 1fr;
+    }
+
+    .feature_icon {
+        width: 100%;
+        height: 70px;
+    }
+
+    .feature_icon img {
+        width: 80%;
+        height: 100%;
+    }
 }
 
 @media only screen and (max-width:450px) {
  
     .footer_content_container {
         padding: 1.4rem;
+    }
+
+    .only_mob {
+        display: block;
+    }
+
+    .text_header p {
+        font-size: 16px;
+        line-height: 27px;
+        font-weight: 500;
+    }
+
+    .text_header .highlight {
+        font-size: 30px;
+    }
+
+    .page_sub_text {
+        padding: 3rem 1.5rem;
+    } 
+
+    .back_illus_steps li {
+        gap: 20px;
+    }
+
+    ol li::before {
+        font-size: 40px;
+    }
+
+    .sub_bottom {
+        display: none;
+    }
+
+    .page_sub_text h3 {
+        font-size: 24px;
+    }
+
+    .page_sub_text > p {
+        font-size: 14px;
+    }
+
+    .page_sub_para p {
+        font-size: 14px;
+    }
+
+    .page_sub_para p .bold {
+        font-size: 16px;
+    }
+
+    .page_sub_step {
+        align-items: flex-start;
+    }
+    
+
+    .back_illus_container p {
+        font-size: 14px;
+    }
+
+    .back_illus_steps li {
+        font-size: 14px;
+        align-items: flex-start;
+    }
+
+    .back_illus_container h3 {
+        font-size: 24px;
+    }
+
+    .back_illus {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .back_illus_container {
+        padding: 8rem 1rem;
+    }
+
+    .features {
+        padding: 12rem 2rem 2rem 4.5vw;
+    }
+
+    .feature_para p {
+        font-size: 14px;
+    }
+
+    .feature_content h3 {
+        font-size: 16px;
+    }
+
+    main {
+        background-size: 18% 100%;
     }
 
     .footer_clip {
