@@ -357,7 +357,7 @@ footer {
 }
 
 .features {
-    padding: 2rem 4.5rem;
+    padding: 2rem 1.5rem;
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -368,7 +368,6 @@ main {
     background-repeat: no-repeat;
     background-position: top left;
     background-size: contain;
-    padding-bottom: 10rem;
 }
 
 .feature {
@@ -414,6 +413,7 @@ main {
     color: white;
     font-size: 18px;
     margin-bottom: 50px;
+    text-align: center;
 }
 
 .back_illus_steps {
@@ -426,14 +426,14 @@ main {
 }
 
 .back_illus_container {
-    padding: 14rem 6rem;
+    padding: 11rem 6rem;
 }
 
 ol {
     list-style: none;
     counter-reset: my-awesome-counter;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-column-gap: 10px;
     margin: 0;
     padding: 0;
@@ -618,7 +618,7 @@ nav {
 
 @media only screen and (max-width:1500px) {
     .features {
-        padding: 5rem 11rem 5rem 6vw;
+        padding: 5rem 11rem 5rem 2rem;
     }
 
     /* main {
@@ -644,7 +644,7 @@ nav {
     }
 
     .features {
-        padding: 5rem 5rem 5rem 6rem;
+        padding: 5rem 5rem 5rem 1rem;
     }
     
 
@@ -749,12 +749,11 @@ nav {
 
     
     main {
-        background-image: url('../shared/timeline_mob.png');
-        background-size: 12% 97%;
+        /* background-size: 12% 97%; */
     }
 
     .features {
-        padding: 8rem 5rem 5rem 1rem;
+        padding: 3rem 5rem 5rem 1rem;
     }
 
     .bannerImg {
@@ -923,6 +922,7 @@ nav {
 
     .page_sub_text > p {
         font-size: 14px;
+        margin-bottom: 30px;
     }
 
     .page_sub_para p {
@@ -1030,10 +1030,13 @@ nav {
     .illustration img {
         width: 100%;
     }
+    .text_header {
+        padding: 1rem 1.5rem;
+    }
 }
 
 @media only screen and (max-width:390px) {
     .accordions {
-        padding: 3rem 0;
+        padding: 1rem 0;
     }
 }
