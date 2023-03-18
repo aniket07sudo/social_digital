@@ -693,6 +693,14 @@ nav {
     text-align: left;
 }
 
+.certifications {
+    padding-top: 80px;
+}
+
+.paid_marketing {
+    padding-bottom: 70px;
+}
+
 
 @media only screen and (max-width:1500px) {
     .features {
@@ -962,6 +970,20 @@ nav {
         padding: 1.4rem;
     }
 
+    
+    .paid_marketing {
+        padding-bottom: 160px;
+    }
+
+
+    .block_card {
+        width: 100%;
+    }
+
+    .block_card_img {
+        max-width: 45px;
+    }
+
     .block_section h3 {
         font-size: 24px;
     }
@@ -1145,9 +1167,7 @@ nav {
 }
 
 @media only screen and (max-width:390px) {
-    .accordions {
-        padding: 3rem 0;
-    }
+    
     
     .sub_top {
         display: none;
